@@ -1,0 +1,31 @@
+BOOK_ID,TITLE,AUTHOR,GENRE,PUBLISHED_YEAR,available_copies
+1,"The Data Whisperer","John Keller",Technology,2019,4
+2,"Learning SQL Fast","Timothy Grant",Education,2021,5
+3,"The Future of AI","Sarah Li",Technology,2022,6
+4,"Beyond Analytics","Olawale Ojo",Business,2022,3
+5,"Numbers That Speak","Aisha Bello",Mathematics,2018,2
+6,"Data-Driven Decisions","Mark Oyen",Business,2021,4
+7,"Understanding Python","Jacob Mensah",Programming,2019,5
+8,"Deep Learning With SQL","James Adeyemi",Technology,2023,2
+9,"From Data to Story","Chioma Nduka",Education,2017,3
+10,"The Analysts Mind","Victor Mensah",Business,2022,5
+11,"Machine Learning Basics","Samuel Tunde",Technolgy,2020,4
+12,"Data Ethics Simplified","Fiona Owolabi",Ethics,2023,6
+13,"Visual Analytics","Linda Okon",Design,2021,4
+14,"Rethinking Business Analytics","Michael Adeniyi",Business,2022,5
+15,"The SQL Expert","David Uche",Programming,2020,2
+16,"Smart Queries","Oyinlade Ire",Education,2018,4
+17,"Data for Growth","Emeka Obi",Business,2021,5
+18,"The Curious Coder","Nancy Akpan",Programming,2017,3
+19,"AI and Society","Felix Dan",Ethics,2023,4
+20,"Statistics for Analysts","Olawale Ajayi",Mathematics,2019,5
+21,"Predictive Models","Ahmed Yusuf",Technology,2022,3
+22,"The Power of SQL","Timothy Grant",Programming,2021,5
+23,"Digital Transformation","Grace Eze",Business,2022,4
+24,"Thinking in Queries","Moses Ojo",Education,2020,3
+25,"Big Data Explained","Henry Chika",Technology,2019,4
+26,"Applied Analytics","Agnes Ode",Business,2021,5
+27,"Modern Data Science","Victoria Lee",Technology,2023,6
+28,"The Analysts Code","Ibrahim Adisa",Programming,2018,2
+29,"SQL for Everyday Tasks","Chinedu Obi",Education,2021,4
+30,"The Logic of Numbers"," Titi Adetayo",Mathematics,2019,3
