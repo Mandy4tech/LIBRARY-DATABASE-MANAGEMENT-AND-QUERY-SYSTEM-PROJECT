@@ -1,0 +1,98 @@
+
+insert into members
+(members_id,first_name, last_name, email, join_date)
+values
+(1, 'David', 'Okafor', 'david.okafor@gmail.com', '2022-02-14');
+select*from members
+insert into members
+(members_id,first_name, last_name, email, join_date)
+values
+(2, 'Blessing', 'Adeola', 'blessing.adeola@gmail.com', '2023-05-21'),
+(3, 'John', 'Adebayo','john.adebayo@example.com', '2021-03-17'),
+(4, 'Mercy', 'Lawal', 'mercy.lawal@example.com', '2020-07-09'),
+(5, 'Peter', 'Chukwu', 'peter.chukwu@examplecom', '2024-01-12'),
+(6, 'Grace', 'Ibrahim', 'grace.ibrahim@example.com', '2021-11-29'),
+(7, 'Samuel', 'Okon', 'samuel.okon@example.com', '2019-08-04'),
+(8,'Linda','Nwosu', 'linda.nwosu@example.com', '2022-04-22');  
+insert into members
+(members_id,first_name, last_name, email, join_date)
+values
+(9, 'Tunde', 'Bamidele', 'tunde.bamidele@examplke.com','2023-02-18'),
+(10, 'Sarah', 'Moses', 'sarah.moses@example.com','2021-12-10'),
+(11, 'Olu', 'Ojo', 'olu.ojo@exampl.com', '2020-06-19');
+
+insert into members
+(members_id,first_name, last_name, email, join_date)
+values
+(12, 'Nancy','Akande','nancy.akande@example.com', '2022-09-03'),
+(13, 'James', 'Taiwo', 'james.taiwo@example.com', '3023-07-05'),
+(14, 'Felix', 'Ogun', 'felix.ogun@example.com','2021-10-14'),
+(15, 'Joy', 'Eze', 'joy.eze@example.com','2020-09-28'),
+(16,'Henry', 'Okeke', 'henry.okeke@example.com','2019-12-01'),
+(17, 'Esther', 'Olawale', 'esther.olawale@example.com', '2024-03-20'),
+(18, 'Paul', 'Ifeanyi', 'paul.ifeanyi@example.com','2022-05-05'),
+(19, 'Rebecca', 'Olatunji', 'rebecca.olatunji@example.com', '2021-09-16'),
+(20, 'Michael', 'Dan', 'michael.dan@example.com', '2020-04-11'),
+(21, 'Juliet', 'Chika', 'juliet.chika@example.com','2019-10-02'),
+(22, 'Aisha', 'Bello', 'aisha.bello@example.com', '2023-03-13'),
+(23, 'Francis', 'Uche', 'francis.uche@eaxample.com', '2022-06-09'),
+(24,'Ngozi', 'Ajayi', 'ngozi.ajayi@example.com', '2020-02-25'),
+(25, 'Daniel', 'Adewale', 'daniel.adewale@example.com', '2021-01-07'),
+(26, 'Femi', 'Ogunleye', 'femi.ogunleye@example.com','2022-11-30'),
+(27, 'Peace' ,'Ola', 'peace.ola@example.com', '3023-09-05'),
+(28, 'Chidi', 'Nnamdi', 'chidi.nnamdi@example.com', '2020-05-18'),
+(29, 'Glory', 'Ekanem', 'glory.ekanem@example.com','2024-04-09'),
+(30, 'Seyi','Aina', 'seyi.aina@example.com', '2021-07-23');
+
+
+insert into loan
+(book_id, members_id, loan_date,return_date, returned)
+values
+( 5, 2,'2025-01-15', null, false),
+(4,8,'2024-11-20', '2024-12-20', true),
+(10,1,'2025-03-11','2025-03-25', true),
+(7,5,'2025-02-12', null, false),
+(12,9,'2024-10-01', '2024-10-22', true);  
+
+select
+book_id,members_id, loan_date, return_date, 
+case when returned = 1 then 'true' else 'false' end as returned_status from loan; 
+
+insert into loan
+(book_id, members_id, loan_date,return_date, returned)
+values
+(3,15,'2025-04-17', null, false),
+(8,11, '2025-05-02', '2025-05-27', true),
+(2,10,'2025-06-10', null,false),
+(14,7,'2025-01-25', '2025-02-15', true),
+(19,18, '2024-09-07', '2024-10-01', true),
+(6,13, '2025-07-11', null, false),
+(20,16, '2025-04-20', '2025-05-12',true),
+(23,4,'2024-12-18', '2025-01-05', true),
+(22,20, '2025-08-15', null, false),
+(25,6, '2025-09-10', '2025-09-25', true),
+(30, 12, '2025-10-05', null, false),
+(9,14,'2024-11-01', '2024-11-22', true),
+(18,19,'2025-03-14', '2025-04-01', true),
+(16,17, '2025-02-01', '2025-02-28', true),
+(27,21, '2025-06-03', null, false),
+(24,23, '2025-03-09', '2025-03-26', true),
+(28,24, '2025-04-14', null, false),
+(11,26, '2025-05-18', '2025-06-03', true),
+(13,27, '2025-07-02', null,false),
+(15,28,'2024-12-27', '2025-01-17', true),
+(17,29,'2025-08-01', '2025-08-21', true),
+(26,30,'2025-09-15', null,false),
+(29,25,'2025-10-12', null,false),
+(21,22, '2025-01-28', '2025-02-15', true),
+(3,8, '2025-03-04', '2025-03-20', true),
+(5,10, '2025-06-22', null, false), 
+(2,11, '2025-07-10', '2025-07-29', true),
+(4,13, '2025-09-09', null ,false),
+(6,14, '2025-10-01', '2025-10-23', true),
+(8,18, '2024-12-05', '2024-12-25' ,true),
+(9, 19, '2025-02-20', null, false),
+(10, 21, '2025-04-25', '2025-05-15', true),
+(12,23, '2025-06-11', null, false), 
+(14,24, '2025-08-18', null, false);
+select*from loan
